@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Time Travel Adventure</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Educational Games</a></li>
+                <li><a href="#">Interactive Stories</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Parental Controls</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="select-period">
+            <label for="time-period">Choose a Time Period:</label>
+            <select id="time-period">
+                <option value="ancient-egypt">Ancient Egypt</option>
+                <option value="medieval-europe">Medieval Europe</option>
+                <option value="renaissance">Renaissance</option>
+                <option value="industrial-age">Industrial Age</option>
+            </select>
+            <button id="load-period">Load Time Period</button>
+        </section>
+        <section id="introduction">
+            <h2>Introduction to Time Period</h2>
+            <div class="intro-content">
+                <div class="overview"></div>
+                <div class="key-events"></div>
+            </div>
+        </section>
+        <section id="interactive-content">
+            <div class="tabs">
+                <button class="tab-link" onclick="openTab(event, 'interactive-story')">Interactive Story</button>
+                <button class="tab-link" onclick="openTab(event, 'educational-games')">Educational Games</button>
+            </div>
+            <div id="interactive-story" class="tab-content">
+                <div class="story-progress">Current Story Progress</div>
+                <button id="save-progress">Save Progress</button>
+                <button id="resume-story">Resume Story</button>
+            </div>
+            <div id="educational-games" class="tab-content">
+                <div class="games-list">
+                    <div class="game-item">
+                        <p>Game 1</p>
+                        <button class="start-game">Start Game</button>
+                    </div>
+                    <div class="game-item">
+                        <p>Game 2</p>
+                        <button class="start-game">Start Game</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="game-interface">
+            <div class="game-instructions">Game instructions and objectives</div>
+            <div class="interactive-elements">Interactive elements for gameplay</div>
+            <button id="submit-game">Submit Game</button>
+            <div class="score-progress">
+                <div class="user-score">Score: 0</div>
+                <div class="progress-bar"></div>
+                <div class="badge-reward">Badge/Reward</div>
+            </div>
+        </section>
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="achievements-summary">Summary of completed games and stories</div>
+            <div class="earned-badges">List of earned badges and rewards</div>
+            <button id="view-report">View Detailed Report</button>
+        </section>
+        <section id="parental-controls">
+            <h2>Parental Controls</h2>
+            <div class="account-settings">Account settings for parents</div>
+            <button id="manage-controls">Manage Parental Controls</button>
+            <div class="learning-reports">Detailed reports on child's learning progress and activities</div>
+            <button id="download-report">Download Report</button>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

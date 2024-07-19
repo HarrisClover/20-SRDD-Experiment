@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ticket Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Company Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="#" id="create-ticket">Create New Ticket</a></li>
+                <li><a href="#" id="view-open-tickets">View Open Tickets</a></li>
+                <li><a href="#" id="view-escalated-tickets">View Escalated Tickets</a></li>
+                <li><a href="#" id="generate-report">Generate Report</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section id="create-ticket-form" class="hidden">
+                <h2>Create New Ticket</h2>
+                <form id="ticket-form">
+                    <label for="customer-name">Customer Name</label>
+                    <input type="text" id="customer-name" name="customer-name" required>
+                    <label for="customer-email">Customer Email</label>
+                    <input type="email" id="customer-email" name="customer-email" required>
+                    <label for="issue-description">Issue Description</label>
+                    <textarea id="issue-description" name="issue-description" required></textarea>
+                    <label for="priority-level">Priority Level</label>
+                    <select id="priority-level" name="priority-level">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <label for="assign-to">Assign to</label>
+                    <select id="assign-to" name="assign-to">
+                        <option value="Agent1">Agent 1</option>
+                        <option value="Agent2">Agent 2</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                    <button type="button" id="cancel">Cancel</button>
+                </form>
+            </section>
+            <section id="ticket-list">
+                <h2>Ticket List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ticket ID</th>
+                            <th>Customer Name</th>
+                            <th>Issue Description</th>
+                            <th>Priority Level</th>
+                            <th>Assigned Agent</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Ticket rows will be populated here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Support</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

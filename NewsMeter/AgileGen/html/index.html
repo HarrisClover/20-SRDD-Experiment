@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article Credibility Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Submit Article</a></li>
+                <li><a href="#">View Results</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="submit-article">
+            <h1>Submit News Article for Credibility Evaluation</h1>
+            <form id="article-form">
+                <label for="article-url">Article URL:</label>
+                <input type="text" id="article-url" name="article-url">
+                <label for="article-file">Upload Article:</label>
+                <input type="file" id="article-file" name="article-file">
+                <button type="button" onclick="evaluateArticle()">Evaluate Article</button>
+            </form>
+        </section>
+
+        <section id="evaluation-results">
+            <h1>Evaluation Results</h1>
+            <div id="single-article-evaluation">
+                <h2>Single Article Evaluation</h2>
+                <p id="single-trustworthiness-score"></p>
+                <ul id="single-explanations"></ul>
+                <ul id="single-evidence"></ul>
+            </div>
+            <div id="multiple-articles-evaluation">
+                <h2>Multiple Articles Evaluation</h2>
+                <ul id="multiple-articles-list"></ul>
+            </div>
+        </section>
+
+        <section id="detailed-analysis">
+            <h1>Detailed Analysis by Factors</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Source</th>
+                        <th>Factor-Value</th>
+                        <th>Score</th>
+                        <th>Explanation</th>
+                    </tr>
+                </thead>
+                <tbody id="detailed-analysis-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Email: contact@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

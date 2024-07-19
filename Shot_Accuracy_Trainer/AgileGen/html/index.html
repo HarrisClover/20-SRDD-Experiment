@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Training Environment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav class="navigation-menu">
+            <a href="#">Dashboard</a>
+            <a href="#">Training</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sport-selection-section">
+            <label for="sport">Select Sport:</label>
+            <select id="sport">
+                <option value="soccer">Soccer</option>
+                <option value="basketball">Basketball</option>
+                <option value="archery">Archery</option>
+            </select>
+            <button id="confirm-sport">Confirm Sport</button>
+        </section>
+        <section class="shot-settings-section">
+            <label for="distance">Distance (e.g., 20m):</label>
+            <input type="text" id="distance">
+            <label for="target-size">Target Size (e.g., 1m):</label>
+            <input type="text" id="target-size">
+            <button id="save-settings">Save Settings</button>
+        </section>
+        <section class="training-interface-section">
+            <div id="training-display">Selected Sport and Shot Settings will appear here</div>
+            <div id="virtual-interface">Interactive area to practice shots</div>
+            <button id="start-training">Start Training Session</button>
+        </section>
+        <section class="real-time-feedback-section">
+            <div id="shot-accuracy">Shot Accuracy: N/A</div>
+            <div id="technique-feedback">Technique Feedback: N/A</div>
+            <button id="end-training">End Training Session</button>
+        </section>
+        <section class="progress-report-section">
+            <button id="generate-report">Generate Report</button>
+            <div id="generated-report">Generated Report will appear here</div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">Contact Information</div>
+        <div class="social-media-links">Social Media Links</div>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

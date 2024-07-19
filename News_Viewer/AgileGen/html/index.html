@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">News Viewer</div>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <nav class="navigation-menu">
+            <a href="#" class="nav-link" id="home-link">Home</a>
+            <a href="#" class="nav-link" id="saved-link">Saved Articles</a>
+            <a href="#" class="nav-link" id="categories-link">Categories</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="news-list-section">
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                    <option value="politics">Politics</option>
+                </select>
+            </div>
+            <div id="news-list" class="news-list"></div>
+        </section>
+
+        <section id="article-section" class="hidden">
+            <div id="article-content"></div>
+            <button id="save-article-btn">Save Article</button>
+        </section>
+
+        <section id="saved-articles-section" class="hidden">
+            <div id="saved-articles-list" class="news-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

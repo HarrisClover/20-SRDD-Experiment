@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoClipper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">VideoClipper</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>VideoClipper - Trim and Clip Your Videos Easily</h1>
+        <div class="upload-section">
+            <button id="upload-button">Upload Video</button>
+            <p>Select a video file to start trimming.</p>
+            <input type="file" id="video-input" accept="video/*" style="display:none;">
+        </div>
+        <div class="video-player">
+            <video id="video" controls></video>
+            <div class="time-selection">
+                <input type="number" id="start-time" placeholder="Start Time (s)">
+                <input type="number" id="end-time" placeholder="End Time (s)">
+            </div>
+        </div>
+        <div class="trim-controls">
+            <button id="trim-button">Trim</button>
+            <p id="error-message" class="error-message"></p>
+        </div>
+        <div class="save-section">
+            <input type="text" id="save-location" placeholder="Specify Save Location">
+            <button id="save-button">Save Trimmed Video</button>
+        </div>
+        <div class="notification-area">
+            <p id="success-message" class="success-message"></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: support@videoclipper.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#main-dashboard {
+    text-align: center;
+}
+
+#new-project-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+#recent-projects {
+    margin-top: 20px;
+}
+
+#recent-projects h2 {
+    margin-bottom: 10px;
+}
+
+#canvas-page {
+    display: flex;
+    height: 80vh;
+}
+
+.toolbar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar button, .toolbar input {
+    margin-bottom: 10px;
+}
+
+.canvas-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+canvas {
+    border: 1px solid #ccc;
+}
+
+.properties-panel {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.properties-panel h3 {
+    margin-top: 0;
+}
+
+.properties-panel label {
+    display: block;
+    margin-top: 10px;
+}
+
+.properties-panel input {
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}

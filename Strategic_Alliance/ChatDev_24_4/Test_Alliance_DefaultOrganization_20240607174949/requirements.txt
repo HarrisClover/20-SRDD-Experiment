@@ -1,0 +1,3 @@
+// Dependencies for the turn-based strategy game
+1. C++ Standard Library
+2. C++ Compiler (GCC, Clang, MSVC etc.)

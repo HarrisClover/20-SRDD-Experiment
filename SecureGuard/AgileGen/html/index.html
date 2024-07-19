@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureGuard Security Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SecureGuard</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Real-time Protection</a></li>
+                <li><a href="#">Virus Scans</a></li>
+                <li><a href="#">Firewall</a></li>
+                <li><a href="#">Password Manager</a></li>
+                <li><a href="#">Alerts & Notifications</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help & Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="real-time-detection">
+            <h2>Real-time Malware Detection</h2>
+            <p>Status: <span id="real-time-status">Running</span></p>
+            <p>Current Activity: <span id="real-time-activity">Browsing the Internet</span></p>
+            <div class="alert">
+                <p><strong>Alert Message:</strong> <span id="real-time-alert">Malware Detected</span></p>
+                <p><strong>Action Taken:</strong> <span id="real-time-action">Threat Neutralized</span></p>
+            </div>
+        </section>
+        <section id="virus-scan">
+            <h2>Virus Scan on File Download</h2>
+            <p>Status: <span id="scan-status">Running</span></p>
+            <p>Current Activity: <span id="scan-activity">File Download in Progress</span></p>
+            <div class="alert">
+                <p><strong>Alert Message:</strong> <span id="scan-alert">Virus Detected in Downloaded File</span></p>
+                <p><strong>Action Taken:</strong> <span id="scan-action">File Quarantined</span></p>
+            </div>
+        </section>
+        <section id="unauthorized-access">
+            <h2>Unauthorized Access Attempt</h2>
+            <p>Status: <span id="access-status">Running</span></p>
+            <p>Current Activity: <span id="access-activity">Monitoring for Unauthorized Access</span></p>
+            <div class="alert">
+                <p><strong>Alert Message:</strong> <span id="access-alert">Unauthorized Access Attempt Detected</span></p>
+                <p><strong>Action Taken:</strong> <span id="access-action">Access Blocked</span></p>
+            </div>
+        </section>
+        <section id="firewall">
+            <h2>Firewall Blocking Unauthorized Traffic</h2>
+            <p>Status: <span id="firewall-status">Enabled</span></p>
+            <p>Current Activity: <span id="firewall-activity">Monitoring Network Traffic</span></p>
+            <div class="alert">
+                <p><strong>Alert Message:</strong> <span id="firewall-alert">Unauthorized Network Traffic Detected</span></p>
+                <p><strong>Action Taken:</strong> <span id="firewall-action">Traffic Blocked</span></p>
+            </div>
+        </section>
+        <section id="password-manager">
+            <h2>Password Manager Usage</h2>
+            <p>Status: <span id="password-status">Enabled</span></p>
+            <p>Current Activity: <span id="password-activity">Website Login</span></p>
+            <div class="alert">
+                <p><strong>Action Taken:</strong> <span id="password-save">Password Saved Securely</span></p>
+                <p><strong>Action Taken:</strong> <span id="password-autofill">Password Autofilled</span></p>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <div class="quick-actions">
+            <button onclick="toggleRealTimeProtection()">Start/Stop Real-time Protection</button>
+            <button onclick="runImmediateVirusScan()">Run Immediate Virus Scan</button>
+            <button onclick="toggleFirewall()">Enable/Disable Firewall</button>
+            <button onclick="openPasswordManager()">Open Password Manager</button>
+            <button onclick="viewAllAlerts()">View All Alerts</button>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

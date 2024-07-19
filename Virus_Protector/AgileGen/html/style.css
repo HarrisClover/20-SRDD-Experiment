@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.status-indicator {
+    font-weight: bold;
+    color: green;
+}
+
+.activity-log, .notification-panel {
+    margin-top: 10px;
+}
+
+.activity-log ul, .notification-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-settings, .last-scan-results, .scan-options, .scan-results, .action-buttons {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#edit-schedule {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button#view-scan-details {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button#quick-scan {
+    background-color: #ffc107;
+    color: #333;
+}
+
+button#full-scan {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+button#custom-scan {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+button#quarantine {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button#delete {
+    background-color: #343a40;
+    color: #fff;
+}
+
+button#ignore {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a, .social-media-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover, .social-media-icons a:hover {
+    text-decoration: underline;
+}

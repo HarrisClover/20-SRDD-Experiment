@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Networking Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Share Content</a></li>
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Career Opportunities</a></li>
+            </ul>
+        </nav>
+        <div class="user-icon">User</div>
+    </header>
+
+    <main>
+        <section id="profile-creation">
+            <h1>Create Your Profile</h1>
+            <form id="profileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+                
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" required>
+                
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" required></textarea>
+                
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" id="profilePicture" name="profilePicture" required>
+                
+                <button type="submit">Create Profile</button>
+            </form>
+            <p id="confirmationMessage"></p>
+        </section>
+
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <input type="text" id="searchBar" placeholder="Search for professionals, groups, or jobs...">
+            <ul id="searchResults"></ul>
+        </section>
+
+        <section id="groups">
+            <h1>Groups</h1>
+            <input type="text" id="groupSearchBar" placeholder="Search for groups...">
+            <ul id="groupSearchResults"></ul>
+            <p id="groupConfirmationMessage"></p>
+        </section>
+
+        <section id="content-sharing">
+            <h1>Share Content</h1>
+            <textarea id="contentBox" placeholder="What's on your mind?"></textarea>
+            <button id="shareButton">Share</button>
+            <p id="contentConfirmationMessage"></p>
+        </section>
+
+        <section id="discussion">
+            <h1>Discussion</h1>
+            <ul id="commentsSection"></ul>
+            <textarea id="commentBox" placeholder="Write a comment..."></textarea>
+            <button id="postButton">Post</button>
+            <p id="commentConfirmationMessage"></p>
+        </section>
+
+        <section id="career-opportunities">
+            <h1>Career Opportunities</h1>
+            <input type="text" id="jobSearchBar" placeholder="Search for job openings...">
+            <ul id="jobSearchResults"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

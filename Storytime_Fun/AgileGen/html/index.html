@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Storybook Creator</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Storybook Creator</div>
+        <nav class="navigation-menu">
+            <a href="#">My Storybooks</a>
+            <a href="#">Create Storybook</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="create-storybook">
+            <h2>Create a New Storybook</h2>
+            <div class="theme-selection">
+                <label for="theme">Choose Theme:</label>
+                <select id="theme">
+                    <option value="fantasy">Fantasy</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="mystery">Mystery</option>
+                </select>
+            </div>
+            <div class="character-selection">
+                <h3>Select Characters:</h3>
+                <div class="characters">
+                    <div class="character" draggable="true">Character 1</div>
+                    <div class="character" draggable="true">Character 2</div>
+                    <div class="character" draggable="true">Character 3</div>
+                </div>
+            </div>
+            <div class="settings-selection">
+                <label for="background">Choose Background:</label>
+                <select id="background">
+                    <option value="forest">Forest</option>
+                    <option value="castle">Castle</option>
+                    <option value="space">Space</option>
+                </select>
+            </div>
+            <div class="text-editor">
+                <h3>Write Your Story:</h3>
+                <textarea id="story-text" rows="10" cols="50"></textarea>
+            </div>
+            <div class="image-upload">
+                <label for="image-upload">Upload Images:</label>
+                <input type="file" id="image-upload" multiple>
+            </div>
+            <button id="preview-button">Preview</button>
+        </section>
+
+        <section id="edit-storybook">
+            <h2>Edit Your Storybook</h2>
+            <div class="voice-over">
+                <button id="record-button">Record Voice-over</button>
+                <button id="playback-button">Play Voice-over</button>
+            </div>
+            <div class="interactive-elements">
+                <button id="add-puzzle">Add Puzzle/Quiz</button>
+                <button id="preview-interactive">Preview Interactive Elements</button>
+            </div>
+        </section>
+
+        <section id="read-storybook">
+            <h2>Read or Listen to Your Storybook</h2>
+            <div class="story-display">
+                <div id="story-content"></div>
+                <audio id="voice-over-playback" controls></audio>
+                <div id="interactive-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

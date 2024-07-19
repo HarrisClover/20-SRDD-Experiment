@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MovieRec</div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#preferences">Preferences</a></li>
+                <li><a href="#watch-history">Watch History</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="welcome-section">
+            <h1>Welcome, <span id="user-name">User</span>!</h1>
+            <p>Discover personalized movie recommendations based on your preferences and watch history.</p>
+        </section>
+
+        <section id="preferences" class="user-preferences">
+            <h2>Your Genre Preferences</h2>
+            <div class="genre-list">
+                <label><input type="checkbox" value="Action"> Action</label>
+                <label><input type="checkbox" value="Comedy"> Comedy</label>
+                <label><input type="checkbox" value="Drama"> Drama</label>
+                <label><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
+                <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+            </div>
+            <button id="save-preferences">Save Preferences</button>
+        </section>
+
+        <section id="watch-history" class="watch-history">
+            <h2>Your Watch History</h2>
+            <ul id="history-list">
+                <!-- Watch history items will be appended here -->
+            </ul>
+        </section>
+
+        <section id="recommendations" class="movie-recommendations">
+            <h2>Recommended Movies for You</h2>
+            <div id="recommendation-list">
+                <!-- Recommended movies will be appended here -->
+            </div>
+            <button id="refresh-recommendations">Refresh Recommendations</button>
+        </section>
+
+        <section id="new-user" class="new-user-section">
+            <h2>New to Our Service?</h2>
+            <p>Set your preferences and start receiving personalized movie recommendations.</p>
+            <div class="popular-movies">
+                <!-- Popular movies will be displayed here -->
+            </div>
+        </section>
+
+        <section id="disliked-genres" class="disliked-genres">
+            <h2>Genres You Dislike</h2>
+            <div class="genre-list">
+                <label><input type="checkbox" value="Horror"> Horror</label>
+            </div>
+            <button id="save-disliked-genres">Save Preferences</button>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-of-service">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

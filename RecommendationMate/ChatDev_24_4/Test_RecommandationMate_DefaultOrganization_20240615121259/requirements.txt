@@ -1,0 +1,11 @@
+# Used for numerical computations
+numpy==1.21.2
+
+# Used for data manipulation and analysis
+pandas==1.3.2
+
+# Used for machine learning and predictive modeling
+scikit-learn==0.24.2
+
+# Used for SQL toolkit and Object-Relational Mapping (ORM) for Python
+sqlalchemy==1.4.22

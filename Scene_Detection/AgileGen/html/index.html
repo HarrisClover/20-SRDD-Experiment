@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Scene Detection System</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Upload Video</a></li>
+                <li><a href="#">Processed Videos</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upload-video">
+            <h2>Upload Your Video</h2>
+            <p>Automatically detect scene changes in your video and get precise timestamps.</p>
+            <form id="upload-form">
+                <input type="file" id="video-file" accept="video/*">
+                <button type="button" id="upload-button">Upload Video</button>
+            </form>
+        </section>
+        <section id="processing-status">
+            <h2>Video Processing Status</h2>
+            <p>Check the status of your video processing.</p>
+            <div id="status-indicator">No video uploaded</div>
+        </section>
+        <section id="processed-videos">
+            <h2>Processed Videos</h2>
+            <p>View the results of your processed videos.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Video Name</th>
+                        <th>Format</th>
+                        <th>Status</th>
+                        <th>Scene Changes Detected</th>
+                        <th>Timestamps</th>
+                    </tr>
+                </thead>
+                <tbody id="processed-videos-table">
+                    <!-- Dynamically populated rows -->
+                </tbody>
+            </table>
+        </section>
+        <section id="scene-detection-results">
+            <h2>Scene Detection Results</h2>
+            <p>Detailed results of the scene detection.</p>
+            <div id="results-display">
+                <p><strong>Video Name:</strong> <span id="result-video-name"></span></p>
+                <p><strong>Format:</strong> <span id="result-video-format"></span></p>
+                <p><strong>Total Scenes Detected:</strong> <span id="result-total-scenes"></span></p>
+                <p><strong>Timestamps:</strong></p>
+                <ul id="result-timestamps-list">
+                    <!-- Dynamically populated timestamps -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

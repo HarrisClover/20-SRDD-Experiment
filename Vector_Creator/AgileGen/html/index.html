@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Vector Creator</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="main-dashboard">
+            <button id="new-project-btn">New Project</button>
+            <div id="recent-projects">
+                <h2>Recent Projects</h2>
+                <!-- Thumbnails of recent projects will be dynamically added here -->
+            </div>
+        </section>
+        <section id="canvas-page" class="hidden">
+            <div class="toolbar">
+                <button id="select-tool">Select</button>
+                <button id="pen-tool">Pen</button>
+                <button id="line-tool">Line</button>
+                <button id="shape-tool">Shape</button>
+                <button id="text-tool">Text</button>
+                <input type="color" id="color-picker">
+                <input type="range" id="stroke-width" min="1" max="10">
+                <button id="add-layer">Add Layer</button>
+                <button id="delete-layer">Delete Layer</button>
+                <button id="move-layer-up">Move Layer Up</button>
+                <button id="move-layer-down">Move Layer Down</button>
+            </div>
+            <div class="canvas-container">
+                <canvas id="drawing-canvas"></canvas>
+            </div>
+            <div class="properties-panel">
+                <h3>Selected Element Properties</h3>
+                <label for="element-color">Color:</label>
+                <input type="color" id="element-color">
+                <label for="element-stroke-width">Stroke Width:</label>
+                <input type="range" id="element-stroke-width" min="1" max="10">
+                <label for="element-opacity">Opacity:</label>
+                <input type="range" id="element-opacity" min="0" max="1" step="0.1">
+                <label for="element-position">Position:</label>
+                <input type="text" id="element-position">
+                <label for="element-size">Size:</label>
+                <input type="text" id="element-size">
+                <h3>Layers</h3>
+                <ul id="layer-list">
+                    <!-- Layers will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

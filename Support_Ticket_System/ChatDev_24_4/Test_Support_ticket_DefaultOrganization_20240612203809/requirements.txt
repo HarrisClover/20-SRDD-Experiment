@@ -1,0 +1,1 @@
+# No external libraries are needed for the current version of the application

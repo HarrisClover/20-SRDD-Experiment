@@ -1,0 +1,15 @@
+'''
+This file contains all the CSS styles for our application.
+'''
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+#drawingCanvas {
+    display: block;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}

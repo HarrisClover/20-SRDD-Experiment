@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Protector Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Virus Protector</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Real-time Protection</a></li>
+                <li><a href="#">Scheduled Scanning</a></li>
+                <li><a href="#">On-demand Scanning</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="real-time-protection">
+            <h2>Real-time Protection</h2>
+            <div class="status-indicator" id="rtp-status">Status: Active</div>
+            <div class="activity-log">
+                <h3>Activity Log</h3>
+                <ul id="activity-log-list">
+                    <li>No recent activities.</li>
+                </ul>
+            </div>
+            <div class="notification-panel">
+                <h3>Notifications</h3>
+                <ul id="notification-panel-list">
+                    <li>No new notifications.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="scheduled-scanning">
+            <h2>Scheduled Scanning</h2>
+            <div class="schedule-settings">
+                <div>Next Scheduled Scan: <span id="next-scan">2023-10-01 02:00 AM</span></div>
+                <div>Frequency: <span id="scan-frequency">Daily</span></div>
+                <button id="edit-schedule">Edit</button>
+            </div>
+            <div class="last-scan-results">
+                <div>Last Scan Date and Time: <span id="last-scan-date">2023-09-30 02:00 AM</span></div>
+                <div>Threats Detected: <span id="last-scan-threats">No</span></div>
+                <button id="view-scan-details">View Details</button>
+            </div>
+        </section>
+        <section id="on-demand-scanning">
+            <h2>On-demand Scanning</h2>
+            <div class="scan-options">
+                <button id="quick-scan">Quick Scan</button>
+                <button id="full-scan">Full Scan</button>
+                <button id="custom-scan">Custom Scan</button>
+            </div>
+            <div class="scan-results">
+                <div>Status: <span id="scan-status">Not Started</span></div>
+                <div>Threats Detected: <span id="detected-threats">0</span></div>
+                <div class="action-buttons">
+                    <button id="quarantine">Quarantine</button>
+                    <button id="delete">Delete</button>
+                    <button id="ignore">Ignore</button>
+                </div>
+            </div>
+        </section>
+        <section id="system-status">
+            <h2>System Status</h2>
+            <div>Protection Status: <span id="protection-status">Protected</span></div>
+            <div>Last Update: <span id="last-update">2023-09-30 01:00 AM</span></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-media-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

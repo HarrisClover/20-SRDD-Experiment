@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav class="navigation-menu">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+            <a href="#">Help</a>
+        </nav>
+        <div class="user-profile">
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li class="active">Sales Data</li>
+                <li>Customer Data</li>
+                <li>Inventory</li>
+                <li>Expenses</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="sales-data-tab">
+                <div class="graph-section">
+                    <canvas id="salesGraph"></canvas>
+                    <div class="customization-options">
+                        <label for="visualizationType">Visualization Type:</label>
+                        <select id="visualizationType">
+                            <option value="bar">Bar Chart</option>
+                            <option value="line">Line Graph</option>
+                            <option value="pie">Pie Chart</option>
+                        </select>
+                        <button id="saveVisualization">Save</button>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <p>Total Sales: <span id="totalSales">$0</span></p>
+                    <p>Average Sales per Day: <span id="averageSales">$0</span></p>
+                </div>
+            </div>
+            <div class="sales-report-generation">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate">
+                <button id="generateReport">Generate Report</button>
+                <div id="loadingIndicator" style="display: none;">Loading...</div>
+                <div class="download-section">
+                    <a href="#" id="downloadReport" style="display: none;">Download Report (PDF)</a>
+                </div>
+            </div>
+            <div class="custom-data-visualization">
+                <label for="dataSetSelector">Data Set:</label>
+                <select id="dataSetSelector">
+                    <option value="sales">Sales Data</option>
+                    <option value="customers">Customer Data</option>
+                </select>
+                <label for="visualizationTypeSelector">Visualization Type:</label>
+                <select id="visualizationTypeSelector">
+                    <option value="bar">Bar Chart</option>
+                    <option value="line">Line Graph</option>
+                    <option value="pie">Pie Chart</option>
+                </select>
+                <button id="saveCustomVisualization">Save Visualization</button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Contact: support@example.com | Phone: 123-456-7890</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

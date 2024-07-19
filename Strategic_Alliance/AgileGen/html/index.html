@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance Conquest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alliance Conquest</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Create Alliance</a></li>
+                <li><a href="#">Manage Alliance</a></li>
+                <li><a href="#">Conquer Territory</a></li>
+                <li><a href="#">Defend Territory</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="create-manage-alliance">
+            <h2>Create and Manage Your Alliance</h2>
+            <div id="create-alliance">
+                <h3>Create Alliance</h3>
+                <form id="create-alliance-form">
+                    <label for="alliance-name">Alliance Name:</label>
+                    <input type="text" id="alliance-name" name="alliance-name">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea>
+                    <button type="button" onclick="createAlliance()">Create</button>
+                </form>
+            </div>
+            <div id="manage-alliance">
+                <h3>Manage Alliance</h3>
+                <p><strong>Current Alliance:</strong> <span id="current-alliance-name">None</span></p>
+                <h4>Members List</h4>
+                <ul id="members-list"></ul>
+                <h4>Invite Players</h4>
+                <input type="text" id="invite-player" placeholder="Enter player name or ID">
+                <button type="button" onclick="invitePlayer()">Invite</button>
+                <h4>Alliance Resources</h4>
+                <p id="alliance-resources">No resources</p>
+                <button type="button" onclick="disbandAlliance()">Disband Alliance</button>
+                <button type="button" onclick="leaveAlliance()">Leave Alliance</button>
+            </div>
+        </section>
+
+        <section id="conquer-territory">
+            <h2>Conquer New Territories</h2>
+            <p><strong>Available Troops:</strong> <span id="available-troops">0</span></p>
+            <label for="target-territory">Target Territory:</label>
+            <select id="target-territory">
+                <!-- Options will be populated dynamically -->
+            </select>
+            <button type="button" onclick="launchAttack()">Launch Attack</button>
+            <p id="battle-result"></p>
+        </section>
+
+        <section id="defend-territory">
+            <h2>Defend Your Territories</h2>
+            <h4>Controlled Territories</h4>
+            <ul id="controlled-territories"></ul>
+            <h4>Incoming Attacks</h4>
+            <ul id="incoming-attacks"></ul>
+            <p id="defense-result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

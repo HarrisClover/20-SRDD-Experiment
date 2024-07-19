@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulMeditation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MindfulMeditation</div>
+        <nav>
+            <ul>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Progress</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="content">
+        <!-- Meditation Library Page -->
+        <div id="library-page">
+            <input type="text" id="search-bar" placeholder="Search for sessions...">
+            <div id="filters">
+                <select id="style-filter">
+                    <option value="">Meditation Style</option>
+                    <option value="Guided Meditation">Guided Meditation</option>
+                    <option value="Mindfulness">Mindfulness</option>
+                    <option value="Zen">Zen</option>
+                </select>
+                <select id="duration-filter">
+                    <option value="">Duration</option>
+                    <option value="5">5 mins</option>
+                    <option value="10">10 mins</option>
+                    <option value="20">20 mins</option>
+                </select>
+                <select id="theme-filter">
+                    <option value="">Themes</option>
+                    <option value="Stress Relief">Stress Relief</option>
+                    <option value="Focus">Focus</option>
+                    <option value="Relaxation">Relaxation</option>
+                </select>
+            </div>
+            <div id="sessions-list"></div>
+        </div>
+        
+        <!-- Progress Tracking Page -->
+        <div id="progress-page" style="display: none;">
+            <div class="progress-overview">
+                <div>Total Sessions Completed: <span id="total-sessions">0</span></div>
+                <div>Total Time Spent Meditating: <span id="total-time">0</span> minutes</div>
+                <canvas id="progress-graph"></canvas>
+            </div>
+        </div>
+        
+        <!-- Settings Page -->
+        <div id="settings-page" style="display: none;">
+            <div class="reminder-settings">
+                <label for="reminder-time">Set Daily Reminder</label>
+                <input type="time" id="reminder-time" value="07:00">
+                <button id="save-reminder">Save</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

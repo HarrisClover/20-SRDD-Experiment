@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Masters - Strategic Gameplay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Battle Masters</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Assemble Team</a></li>
+                <li><a href="#">Battle Scenarios</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="assemble-team">
+            <h2>Assemble Your Team of Warriors</h2>
+            <p>Select warriors from the list and add them to your team.</p>
+            <div class="warrior-selection">
+                <input type="text" id="search-warriors" placeholder="Search warriors...">
+                <ul id="warrior-list">
+                    <!-- Warriors will be dynamically populated here -->
+                </ul>
+            </div>
+            <div class="team-list">
+                <h3>Your Team</h3>
+                <ul id="selected-warriors">
+                    <!-- Selected warriors will be displayed here -->
+                </ul>
+                <p>Team size: <span id="team-size">0</span></p>
+            </div>
+        </section>
+        <section id="start-battle">
+            <h2>Choose a Battle Scenario</h2>
+            <p>Select a battle scenario to start the battle.</p>
+            <ul id="battle-scenarios">
+                <!-- Battle scenarios will be dynamically populated here -->
+            </ul>
+            <button id="start-battle-btn">Start Battle</button>
+            <div id="current-team">
+                <h3>Current Team</h3>
+                <ul id="current-team-list">
+                    <!-- Current team summary will be displayed here -->
+                </ul>
+            </div>
+        </section>
+        <section id="ongoing-battle">
+            <h2>Tactical Battle in Progress</h2>
+            <p>Strategically position your units, plan your moves, and use special abilities to defeat your opponent.</p>
+            <div id="battlefield">
+                <!-- Battlefield representation will be here -->
+            </div>
+            <div id="warrior-actions">
+                <h3>Warrior Actions</h3>
+                <ul id="actions-list">
+                    <!-- Actions and abilities will be dynamically populated here -->
+                </ul>
+            </div>
+            <div id="battle-log">
+                <h3>Battle Log</h3>
+                <ul id="log-list">
+                    <!-- Battle log will be displayed here -->
+                </ul>
+            </div>
+        </section>
+        <section id="battle-outcomes">
+            <h2>Battle Results</h2>
+            <p>Review the outcome of the battle.</p>
+            <div id="outcome-display">
+                <!-- Outcome comparison and result will be displayed here -->
+            </div>
+            <button id="return-to-scenarios">Return to Scenarios</button>
+            <button id="assemble-new-team">Assemble New Team</button>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

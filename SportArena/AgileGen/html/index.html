@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Sports Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#create-arena">Create Arena</a></li>
+            <li><a href="#customize-arena">Customize Arena</a></li>
+            <li><a href="#add-remove-features">Add/Remove Features</a></li>
+            <li><a href="#save-load-configurations">Save/Load Configurations</a></li>
+        </ul>
+    </nav>
+
+    <section id="create-arena">
+        <h1>Create New Sports Arena</h1>
+        <div class="form-group">
+            <label for="sport-type">Sport Type:</label>
+            <select id="sport-type">
+                <option value="Soccer">Soccer</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Tennis">Tennis</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="arena-name">Arena Name:</label>
+            <input type="text" id="arena-name">
+        </div>
+        <div class="form-group">
+            <label for="arena-length">Length:</label>
+            <input type="number" id="arena-length">
+        </div>
+        <div class="form-group">
+            <label for="arena-width">Width:</label>
+            <input type="number" id="arena-width">
+        </div>
+        <div class="form-group">
+            <label for="arena-height">Height:</label>
+            <input type="number" id="arena-height">
+        </div>
+        <button id="save-arena">Save Arena</button>
+        <div id="create-arena-message"></div>
+    </section>
+
+    <section id="customize-arena">
+        <h1>Customize Your Arena</h1>
+        <div class="form-group">
+            <label for="select-arena">Select Arena:</label>
+            <select id="select-arena"></select>
+        </div>
+        <div class="form-group">
+            <label for="seating-arrangements">Seating Arrangements:</label>
+            <select id="seating-arrangements">
+                <option value="VIP">VIP</option>
+                <option value="General Admission">General Admission</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="lighting-options">Lighting Options:</label>
+            <select id="lighting-options">
+                <option value="Day">Day</option>
+                <option value="Night">Night</option>
+                <option value="Custom">Custom</option>
+            </select>
+        </div>
+        <button id="save-customizations">Save Customizations</button>
+        <div id="customize-arena-preview"></div>
+    </section>
+
+    <section id="add-remove-features">
+        <h1>Modify Arena Features</h1>
+        <div class="form-group">
+            <label for="select-arena-features">Select Arena:</label>
+            <select id="select-arena-features"></select>
+        </div>
+        <div class="form-group">
+            <label>Add Features:</label>
+            <div>
+                <input type="checkbox" id="feature-scoreboard" value="Scoreboard"><label for="feature-scoreboard">Scoreboard</label>
+            </div>
+            <div>
+                <input type="checkbox" id="feature-additional-seating" value="Additional Seating"><label for="feature-additional-seating">Additional Seating</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Remove Features:</label>
+            <div>
+                <input type="checkbox" id="feature-goalposts" value="Goalposts"><label for="feature-goalposts">Goalposts</label>
+            </div>
+            <div>
+                <input type="checkbox" id="feature-benches" value="Benches"><label for="feature-benches">Benches</label>
+            </div>
+        </div>
+        <button id="update-arena">Update Arena</button>
+        <div id="add-remove-features-preview"></div>
+    </section>
+
+    <section id="save-load-configurations">
+        <h1>Manage Arena Configurations</h1>
+        <div id="current-configuration"></div>
+        <button id="save-configuration">Save Configuration</button>
+        <div id="save-configuration-message"></div>
+        <div class="form-group">
+            <label for="load-configuration">Load Configuration:</label>
+            <select id="load-configuration"></select>
+        </div>
+        <button id="load-configuration-button">Load Configuration</button>
+        <div id="load-configuration-message"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

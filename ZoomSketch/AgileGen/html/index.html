@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Collaborative Sketching</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="user-controls">
+            <div class="user-profile">User Profile</div>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </header>
+    <main>
+        <div class="canvas-container">
+            <canvas id="shared-canvas"></canvas>
+            <div class="tool-palette">
+                <button id="brush-tool">Brush</button>
+                <button id="eraser-tool">Eraser</button>
+                <input type="color" id="color-picker">
+            </div>
+            <div class="zoom-controls">
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">-</button>
+            </div>
+        </div>
+        <aside>
+            <div class="user-list">
+                <h3>Users</h3>
+                <ul id="user-list"></ul>
+            </div>
+            <div class="chat-window">
+                <h3>Chat</h3>
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-chat">Send</button>
+            </div>
+            <button id="save-btn">Save</button>
+            <button id="undo-btn">Undo</button>
+            <button id="redo-btn">Redo</button>
+            <div class="permissions-settings">
+                <h3>Permissions</h3>
+                <div id="permissions-list"></div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="notification-area"></div>
+    </footer>
+
+    <div id="save-modal" class="modal">
+        <div class="modal-content">
+            <p>Sketch Saved!</p>
+            <button id="close-save-modal">Close</button>
+        </div>
+    </div>
+
+    <div id="permissions-modal" class="modal">
+        <div class="modal-content">
+            <h3>Set Permissions</h3>
+            <div id="permissions-form"></div>
+            <button id="close-permissions-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
